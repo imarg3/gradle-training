@@ -1,0 +1,4 @@
+plugins {
+    id 'com.gradle.enterprise' version '3.3'
+}
+rootProject.name = '01-local-build-cache'
