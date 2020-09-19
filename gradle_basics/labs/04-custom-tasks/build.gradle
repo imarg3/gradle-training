@@ -1,0 +1,44 @@
+/*
+    1. Write a custom task class of type `Greeting`.
+		- Add a property `message` for the greeting text.
+		- Assign a default value to it.
+        - The task action should print the message text property.
+		- Add two tasks to your build script, both of type `Greeting`.
+        - One should assign a custom value to the message property.
+		- Execute both tasks.
+
+    2. Is there an alternative to using an annotation for adding a task action to a custom task?
+*/
+
+version = "1.0"
+
+tasks.register('info'){
+    doFirst{
+        println "Task name:    $name"
+        println "Project name: ${project.name}"
+        println "Version:      $version"
+    }
+}
+
+tasks.register('hello', Greeting){
+    doFirst{
+        println "About to greeting the default user"
+        logger.warn "Logging at info level"
+    }
+    doLast{
+        println 'Just greeted the default user'
+    }
+}
+
+tasks.register('hiThere', Greeting){ // can be run using gradle hT (Camel Case)
+    message = 'Hi There!'
+}
+
+class Greeting extends DefaultTask{
+    String message = 'Hello, World!'
+
+    @TaskAction
+    void sayHello(){
+        println message
+    }
+}

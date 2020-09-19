@@ -1,0 +1,8 @@
+rootProject.name = 'create-build-scan'
+
+gradleEnterprise {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
+}

@@ -1,0 +1,1585 @@
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+api - API dependencies for source set 'main'. (n)
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts. (n)
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
+\--- org.jboss.as:jboss-as-jpa:7.1.2.Final
+     +--- org.jboss.as:jboss-as-connector:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final
+     |    |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-nio:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss:staxmapper:1.1.0.Final
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-domain-http-interface:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.com.sun.httpserver:httpserver:1.0.1.Final
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-deployment-repository:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-embedded:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-platform-mbean:7.1.2.Final
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-process-controller:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-remoting:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    +--- org.jboss.logmanager:log4j-jboss-logmanager:1.0.0.Final
+     |    |    |    \--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    +--- org.jboss.stdio:jboss-stdio:1.0.1.GA
+     |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final
+     |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA
+     |    |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    |    +--- org.slf4j:slf4j-api:1.5.6 -> 1.6.1
+     |    |    |    +--- javax.xml.bind:jaxb-api:2.1
+     |    |    |    |    +--- javax.xml.stream:stax-api:1.0-2
+     |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    \--- com.sun.xml.bind:jaxb-impl:2.1.3
+     |    |    |         \--- javax.xml.bind:jaxb-api:2.1 (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- sun-jaxb:jaxb-api:2.1.4
+     |    |    |    \--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    +--- org.jboss.metadata:jboss-metadata-ear:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-remote-naming:1.0.3.Final
+     |    |    |    |    +--- org.jboss:jboss-ejb-client:1.0.0.Final -> 1.0.10.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.0.GA -> 3.0.3.GA
+     |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.3.GA -> 3.2.7.GA (*)
+     |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final
+     |    |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.spec.javax.rmi:jboss-rmi-api_1.0_spec:1.0.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final
+     |    |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final
+     |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    +--- org.jboss.jbossts:jbossjts-integration:4.16.4.Final
+     |    |    +--- org.jboss.spec.javax.resource:jboss-connector-api_1.6_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-infinispan:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-impl:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-jgroups:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss.remotingjmx:remoting-jmx:1.0.3.Final
+     |    |    |    |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging-processor:1.0.2.Final
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-nio:3.0.3.GA (*)
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.11.GA -> 1.3.14.GA (*)
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.11.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.codehaus.woodstox:woodstox-core-asl:4.1.1
+     |    |    |    |    |    \--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    +--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-jdbc:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-remote:5.1.4.FINAL
+     |    |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-client-hotrod:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- net.jcip:jcip-annotations:1.0
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.security:jboss-negotiation-extras:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.jboss.security:jboss-negotiation-spnego:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1 (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    +--- org.jboss.spec.javax.security.jacc:jboss-jacc-api_1.4_spec:1.0.2.Final
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    |    +--- org.picketbox:picketbox-infinispan:4.0.9.Final
+     |    |    +--- org.picketbox:picketbox-commons:1.0.0.final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-api:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-impl:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-deployers-common:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-jdbc:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-validator:1.0.11.Final
+     |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    +--- javax.validation:validation-api:1.0.0.GA
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ejb3:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final
+     |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.classfilewriter:jboss-classfilewriter:1.0.2.Final
+     |    +--- org.jboss:jboss-ejb-client:1.0.10.Final (*)
+     |    +--- org.jboss:jboss-iiop-client:1.0.0.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final (*)
+     |    +--- org.jboss.ejb3:jboss-ejb3-ext-api:2.0.0
+     |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.xml.rpc:jboss-jaxrpc-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-spi:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-util:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-web:7.1.2.Final
+     |    +--- org.jboss.spec.javax.faces:jboss-jsf-api_2.1_spec:2.0.2.Final
+     |    +--- com.sun.faces:jsf-impl:2.1.7-jbossorg-2
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-web-spi:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Beta2 -> 1.0.1.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final (*)
+     |    +--- org.jboss.netty:netty:3.2.6.Final
+     |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.security.auth.message:jboss-jaspi-api_1.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet.jsp:jboss-jsp-api_2.2_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.el:jboss-el-api_2.2_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.web:jasper-jdt:7.0.3.Final
+     |    +--- org.jboss.web:jbossweb:7.0.16.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.web:jbossweb:7.0.16.Final
+     +--- org.jboss.common:jboss-common-beans:1.0.0.Final
+     +--- antlr:antlr:2.7.7
+     +--- asm:asm:3.3.1
+     +--- commons-collections:commons-collections:3.2.1
+     +--- dom4j:dom4j:1.6.1
+     +--- org.javassist:javassist:3.15.0-GA
+     +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA (*)
+     +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     +--- org.jboss:jboss-common-core:2.2.17.GA
+     +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     +--- org.slf4j:slf4j-api:1.6.1
+     \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+
+compileOnly - Compile only dependencies for source set 'main'. (n)
+No dependencies
+
+default - Configuration for default artifacts. (n)
+No dependencies
+
+implementation - Implementation only dependencies for source set 'main'. (n)
+\--- org.jboss.as:jboss-as-jpa:7.1.2.Final (n)
+
+runtimeClasspath - Runtime classpath of source set 'main'.
+\--- org.jboss.as:jboss-as-jpa:7.1.2.Final
+     +--- org.jboss.as:jboss-as-connector:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final
+     |    |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-nio:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss:staxmapper:1.1.0.Final
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-domain-http-interface:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.com.sun.httpserver:httpserver:1.0.1.Final
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-deployment-repository:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-embedded:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-platform-mbean:7.1.2.Final
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-process-controller:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-remoting:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    +--- org.jboss.logmanager:log4j-jboss-logmanager:1.0.0.Final
+     |    |    |    \--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    +--- org.jboss.stdio:jboss-stdio:1.0.1.GA
+     |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final
+     |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA
+     |    |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    |    +--- org.slf4j:slf4j-api:1.5.6 -> 1.6.1
+     |    |    |    +--- javax.xml.bind:jaxb-api:2.1
+     |    |    |    |    +--- javax.xml.stream:stax-api:1.0-2
+     |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    \--- com.sun.xml.bind:jaxb-impl:2.1.3
+     |    |    |         \--- javax.xml.bind:jaxb-api:2.1 (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- sun-jaxb:jaxb-api:2.1.4
+     |    |    |    \--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    +--- org.jboss.metadata:jboss-metadata-ear:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-remote-naming:1.0.3.Final
+     |    |    |    |    +--- org.jboss:jboss-ejb-client:1.0.0.Final -> 1.0.10.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.0.GA -> 3.0.3.GA
+     |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.3.GA -> 3.2.7.GA (*)
+     |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final
+     |    |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.spec.javax.rmi:jboss-rmi-api_1.0_spec:1.0.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final
+     |    |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging-spi:2.2.0.CR1
+     |    |    |    +--- org.jboss.spec.javax.resource:jboss-connector-api_1.5_spec:1.0.0.Final
+     |    |    |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Beta1 -> 1.0.1.Final
+     |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    +--- org.jboss.jbossts:jbossjts-integration:4.16.4.Final
+     |    |    +--- org.jboss.spec.javax.resource:jboss-connector-api_1.6_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-infinispan:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-impl:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-jgroups:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss.remotingjmx:remoting-jmx:1.0.3.Final
+     |    |    |    |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging-processor:1.0.2.Final
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-nio:3.0.3.GA (*)
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.11.GA -> 1.3.14.GA (*)
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.11.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.codehaus.woodstox:woodstox-core-asl:4.1.1
+     |    |    |    |    |    \--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    +--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-jdbc:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-remote:5.1.4.FINAL
+     |    |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-client-hotrod:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- net.jcip:jcip-annotations:1.0
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.security:jboss-negotiation-extras:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.jboss.security:jboss-negotiation-spnego:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1 (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    +--- org.jboss.spec.javax.security.jacc:jboss-jacc-api_1.4_spec:1.0.2.Final
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    |    +--- org.picketbox:picketbox-infinispan:4.0.9.Final
+     |    |    +--- org.picketbox:picketbox-commons:1.0.0.final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-api:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final
+     |    |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final (*)
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-impl:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final
+     |    |    |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    |    |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    |    |    +--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final (*)
+     |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-core-api:1.0.11.Final (*)
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final (*)
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final (*)
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    \--- org.picketbox:picketbox:4.0.8.Final -> 4.0.9.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final (*)
+     |    +--- org.jboss.ironjacamar:ironjacamar-deployers-common:1.0.11.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-jdbc:1.0.11.Final
+     |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-validator:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final (*)
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    |    \--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final (*)
+     |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    +--- javax.validation:validation-api:1.0.0.GA
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ejb3:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final
+     |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.classfilewriter:jboss-classfilewriter:1.0.2.Final
+     |    +--- org.jboss:jboss-ejb-client:1.0.10.Final (*)
+     |    +--- org.jboss:jboss-iiop-client:1.0.0.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final (*)
+     |    +--- org.jboss.ejb3:jboss-ejb3-ext-api:2.0.0
+     |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.xml.rpc:jboss-jaxrpc-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-spi:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-util:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-web:7.1.2.Final
+     |    +--- org.jboss.spec.javax.faces:jboss-jsf-api_2.1_spec:2.0.2.Final
+     |    +--- com.sun.faces:jsf-impl:2.1.7-jbossorg-2
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-web-spi:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Beta2 -> 1.0.1.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final (*)
+     |    +--- org.jboss.netty:netty:3.2.6.Final
+     |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.security.auth.message:jboss-jaspi-api_1.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet.jsp:jboss-jsp-api_2.2_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.el:jboss-el-api_2.2_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.web:jasper-jdt:7.0.3.Final
+     |    +--- org.jboss.web:jbossweb:7.0.16.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.web:jbossweb:7.0.16.Final
+     +--- org.jboss.common:jboss-common-beans:1.0.0.Final
+     +--- antlr:antlr:2.7.7
+     +--- asm:asm:3.3.1
+     +--- commons-collections:commons-collections:3.2.1
+     +--- dom4j:dom4j:1.6.1
+     +--- org.javassist:javassist:3.15.0-GA
+     +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA (*)
+     +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     +--- org.jboss:jboss-common-core:2.2.17.GA
+     +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     +--- org.slf4j:slf4j-api:1.6.1
+     \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testCompileClasspath - Compile classpath for source set 'test'.
+\--- org.jboss.as:jboss-as-jpa:7.1.2.Final
+     +--- org.jboss.as:jboss-as-connector:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final
+     |    |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-nio:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss:staxmapper:1.1.0.Final
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-domain-http-interface:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.com.sun.httpserver:httpserver:1.0.1.Final
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-deployment-repository:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-embedded:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-platform-mbean:7.1.2.Final
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-process-controller:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-remoting:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    +--- org.jboss.logmanager:log4j-jboss-logmanager:1.0.0.Final
+     |    |    |    \--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    +--- org.jboss.stdio:jboss-stdio:1.0.1.GA
+     |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final
+     |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA
+     |    |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    |    +--- org.slf4j:slf4j-api:1.5.6 -> 1.6.1
+     |    |    |    +--- javax.xml.bind:jaxb-api:2.1
+     |    |    |    |    +--- javax.xml.stream:stax-api:1.0-2
+     |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    \--- com.sun.xml.bind:jaxb-impl:2.1.3
+     |    |    |         \--- javax.xml.bind:jaxb-api:2.1 (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- sun-jaxb:jaxb-api:2.1.4
+     |    |    |    \--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    +--- org.jboss.metadata:jboss-metadata-ear:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-remote-naming:1.0.3.Final
+     |    |    |    |    +--- org.jboss:jboss-ejb-client:1.0.0.Final -> 1.0.10.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.0.GA -> 3.0.3.GA
+     |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.3.GA -> 3.2.7.GA (*)
+     |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final
+     |    |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.spec.javax.rmi:jboss-rmi-api_1.0_spec:1.0.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final
+     |    |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final
+     |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    +--- org.jboss.jbossts:jbossjts-integration:4.16.4.Final
+     |    |    +--- org.jboss.spec.javax.resource:jboss-connector-api_1.6_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-infinispan:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-impl:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-jgroups:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss.remotingjmx:remoting-jmx:1.0.3.Final
+     |    |    |    |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging-processor:1.0.2.Final
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-nio:3.0.3.GA (*)
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.11.GA -> 1.3.14.GA (*)
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.11.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.codehaus.woodstox:woodstox-core-asl:4.1.1
+     |    |    |    |    |    \--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    +--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-jdbc:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-remote:5.1.4.FINAL
+     |    |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-client-hotrod:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- net.jcip:jcip-annotations:1.0
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.security:jboss-negotiation-extras:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.jboss.security:jboss-negotiation-spnego:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1 (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    +--- org.jboss.spec.javax.security.jacc:jboss-jacc-api_1.4_spec:1.0.2.Final
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    |    +--- org.picketbox:picketbox-infinispan:4.0.9.Final
+     |    |    +--- org.picketbox:picketbox-commons:1.0.0.final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-api:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-impl:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-deployers-common:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-jdbc:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-validator:1.0.11.Final
+     |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    +--- javax.validation:validation-api:1.0.0.GA
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ejb3:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final
+     |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.classfilewriter:jboss-classfilewriter:1.0.2.Final
+     |    +--- org.jboss:jboss-ejb-client:1.0.10.Final (*)
+     |    +--- org.jboss:jboss-iiop-client:1.0.0.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final (*)
+     |    +--- org.jboss.ejb3:jboss-ejb3-ext-api:2.0.0
+     |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.xml.rpc:jboss-jaxrpc-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-spi:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-util:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-web:7.1.2.Final
+     |    +--- org.jboss.spec.javax.faces:jboss-jsf-api_2.1_spec:2.0.2.Final
+     |    +--- com.sun.faces:jsf-impl:2.1.7-jbossorg-2
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-web-spi:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Beta2 -> 1.0.1.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final (*)
+     |    +--- org.jboss.netty:netty:3.2.6.Final
+     |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.security.auth.message:jboss-jaspi-api_1.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet.jsp:jboss-jsp-api_2.2_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.el:jboss-el-api_2.2_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.web:jasper-jdt:7.0.3.Final
+     |    +--- org.jboss.web:jbossweb:7.0.16.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.web:jbossweb:7.0.16.Final
+     +--- org.jboss.common:jboss-common-beans:1.0.0.Final
+     +--- antlr:antlr:2.7.7
+     +--- asm:asm:3.3.1
+     +--- commons-collections:commons-collections:3.2.1
+     +--- dom4j:dom4j:1.6.1
+     +--- org.javassist:javassist:3.15.0-GA
+     +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA (*)
+     +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     +--- org.jboss:jboss-common-core:2.2.17.GA
+     +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     +--- org.slf4j:slf4j-api:1.6.1
+     \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+No dependencies
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
+\--- org.jboss.as:jboss-as-jpa:7.1.2.Final
+     +--- org.jboss.as:jboss-as-connector:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final
+     |    |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-nio:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss:staxmapper:1.1.0.Final
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-domain-http-interface:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final
+     |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.com.sun.httpserver:httpserver:1.0.1.Final
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-deployment-repository:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    |    +--- org.jboss.as:jboss-as-protocol:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-embedded:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-platform-mbean:7.1.2.Final
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-process-controller:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-remoting:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final
+     |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss:jandex:1.0.3.Final
+     |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.1.Final
+     |    |    +--- org.jboss.logmanager:log4j-jboss-logmanager:1.0.0.Final
+     |    |    |    \--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.modules:jboss-modules:1.1.2.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.7.GA (*)
+     |    |    +--- org.jboss.sasl:jboss-sasl:1.0.1.Final (*)
+     |    |    +--- org.jboss.stdio:jboss-stdio:1.0.1.GA
+     |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    +--- org.jboss:jboss-vfs:3.1.0.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final
+     |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA
+     |    |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    |    +--- org.slf4j:slf4j-api:1.5.6 -> 1.6.1
+     |    |    |    +--- javax.xml.bind:jaxb-api:2.1
+     |    |    |    |    +--- javax.xml.stream:stax-api:1.0-2
+     |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    \--- com.sun.xml.bind:jaxb-impl:2.1.3
+     |    |    |         \--- javax.xml.bind:jaxb-api:2.1 (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- sun-jaxb:jaxb-api:2.1.4
+     |    |    |    \--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    +--- org.jboss.metadata:jboss-metadata-ear:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.invocation:jboss-invocation:1.1.1.Final
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final
+     |    |    |    +--- org.jboss:jboss-remote-naming:1.0.3.Final
+     |    |    |    |    +--- org.jboss:jboss-ejb-client:1.0.0.Final -> 1.0.10.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.0.GA -> 1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.0.GA -> 3.0.3.GA
+     |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.3.GA -> 3.2.7.GA (*)
+     |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final
+     |    |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.spec.javax.rmi:jboss-rmi-api_1.0_spec:1.0.4.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final
+     |    |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jacorb:jacorb:2.3.2.jbossorg-0
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final
+     |    |    |    +--- org.jboss.logging:jboss-logging-spi:2.2.0.CR1
+     |    |    |    +--- org.jboss.spec.javax.resource:jboss-connector-api_1.5_spec:1.0.0.Final
+     |    |    |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Beta1 -> 1.0.1.Final
+     |    |    +--- org.jboss.jbossts:jbossjts:4.16.4.Final
+     |    |    +--- org.jboss.jbossts:jbossjts-integration:4.16.4.Final
+     |    |    +--- org.jboss.spec.javax.resource:jboss-connector-api_1.6_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.as:jboss-as-domain-management:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-infinispan:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-impl:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss:jboss-dmr:1.1.1.Final
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-clustering-jgroups:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final
+     |    |    |    |    |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    |    |    |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    |    +--- org.jboss.remotingjmx:remoting-jmx:1.0.3.Final
+     |    |    |    |    |    |    +--- org.jboss.logmanager:jboss-logmanager:1.3.0.Final -> 1.3.1.Final
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    |    +--- org.jboss.logging:jboss-logging-processor:1.0.2.Final
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.remoting3:jboss-remoting:3.2.4.GA -> 3.2.7.GA (*)
+     |    |    |    |    |    |    +--- org.jboss.sasl:jboss-sasl:1.0.0.Final -> 1.0.1.Final (*)
+     |    |    |    |    |    |    +--- org.jboss.xnio:xnio-api:3.0.3.GA
+     |    |    |    |    |    |    \--- org.jboss.xnio:xnio-nio:3.0.3.GA (*)
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    |    +--- org.jboss.as:jboss-as-network:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-jmx:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-threads:7.1.2.Final (*)
+     |    |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL
+     |    |    |    |    +--- org.jgroups:jgroups:3.0.9.Final
+     |    |    |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.11.GA -> 1.3.14.GA (*)
+     |    |    |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.11.GA -> 1.3.14.GA
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    |    +--- org.codehaus.woodstox:woodstox-core-asl:4.1.1
+     |    |    |    |    |    \--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    +--- org.codehaus.woodstox:stax2-api:3.1.1
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-jdbc:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-cachestore-remote:5.1.4.FINAL
+     |    |    |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- org.infinispan:infinispan-client-hotrod:5.1.4.FINAL
+     |    |    |    |    \--- org.rhq.helpers:rhq-pluginAnnotations:3.0.4
+     |    |    |    +--- net.jcip:jcip-annotations:1.0
+     |    |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.security:jboss-negotiation-extras:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1
+     |    |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Final -> 1.0.1.Final
+     |    |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.jboss.security:jboss-negotiation-spnego:2.2.0.SP1
+     |    |    |    +--- org.jboss.security:jboss-negotiation-common:2.2.0.SP1 (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.0.0.Beta5 -> 3.1.1.GA
+     |    |    |    +--- org.jboss.web:jbossweb:7.0.0.CR2 -> 7.0.16.Final
+     |    |    |    +--- org.picketbox:picketbox:4.0.0.Beta4 -> 4.0.9.Final
+     |    |    |    \--- org.picketbox:picketbox-commons:1.0.0.CR1 -> 1.0.0.final
+     |    |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    |    +--- org.jboss.spec.javax.security.jacc:jboss-jacc-api_1.4_spec:1.0.2.Final
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    |    +--- org.picketbox:picketbox-infinispan:4.0.9.Final
+     |    |    +--- org.picketbox:picketbox-commons:1.0.0.final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-api:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final
+     |    |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final (*)
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-core-impl:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final
+     |    |    |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    |    |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    |    |    +--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final (*)
+     |    |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-core-api:1.0.11.Final (*)
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final (*)
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    +--- javax.validation:validation-api:1.0.0.GA
+     |    |    +--- org.jboss:jboss-transaction-spi:7.0.0.Final (*)
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    +--- org.jboss.threads:jboss-threads:2.0.0.GA
+     |    |    \--- org.picketbox:picketbox:4.0.8.Final -> 4.0.9.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final (*)
+     |    +--- org.jboss.ironjacamar:ironjacamar-deployers-common:1.0.11.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    +--- org.jboss.ironjacamar:ironjacamar-jdbc:1.0.11.Final
+     |    |    \--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.ironjacamar:ironjacamar-validator:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-api:1.0.11.Final
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-impl:1.0.11.Final (*)
+     |    |    +--- org.jboss.ironjacamar:ironjacamar-common-spi:1.0.11.Final
+     |    |    \--- org.jboss.ironjacamar:ironjacamar-spec-api:1.0.11.Final (*)
+     |    +--- org.picketbox:picketbox:4.0.9.Final
+     |    +--- javax.validation:validation-api:1.0.0.GA
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-controller-client:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-ejb3:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-controller:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final
+     |    |    +--- org.infinispan:infinispan-core:5.1.4.FINAL (*)
+     |    |    +--- org.jboss.as:jboss-as-clustering-common:7.1.2.Final (*)
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-jacorb:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-transactions:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.classfilewriter:jboss-classfilewriter:1.0.2.Final
+     |    +--- org.jboss:jboss-ejb-client:1.0.10.Final (*)
+     |    +--- org.jboss:jboss-iiop-client:1.0.0.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.metadata:jboss-metadata-ejb:7.0.3.Final (*)
+     |    +--- org.jboss.ejb3:jboss-ejb3-ext-api:2.0.0
+     |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    +--- org.jboss.marshalling:jboss-marshalling-river:1.3.14.GA (*)
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.xml.rpc:jboss-jaxrpc-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-spi:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-jpa-util:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-connector:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.as:jboss-as-naming:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     +--- org.jboss.as:jboss-as-web:7.1.2.Final
+     |    +--- org.jboss.spec.javax.faces:jboss-jsf-api_2.1_spec:2.0.2.Final
+     |    +--- com.sun.faces:jsf-impl:2.1.7-jbossorg-2
+     |    +--- org.jboss:jboss-common-core:2.2.17.GA
+     |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    +--- org.jboss.as:jboss-as-server:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-registry:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-clustering-web-spi:7.1.2.Final
+     |    |    +--- org.jboss.as:jboss-as-clustering-api:7.1.2.Final (*)
+     |    |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final
+     |    |    |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    |    |    +--- org.jboss.logging:jboss-logging:3.1.0.GA -> 3.1.1.GA
+     |    |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.0.Beta2 -> 1.0.1.Final
+     |    |    +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     |    |    +--- org.jboss.marshalling:jboss-marshalling:1.3.14.GA
+     |    |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    |    +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     |    |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     |    +--- org.jboss.as:jboss-as-ee:7.1.2.Final (*)
+     |    +--- org.jboss.as:jboss-as-security:7.1.2.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     |    +--- org.jboss.metadata:jboss-metadata-web:7.0.3.Final (*)
+     |    +--- org.jboss.netty:netty:3.2.6.Final
+     |    +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.security.auth.message:jboss-jaspi-api_1.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.spec.javax.servlet.jsp:jboss-jsp-api_2.2_spec:1.0.1.Final
+     |    |    +--- org.jboss.spec.javax.el:jboss-el-api_2.2_spec:1.0.1.Final
+     |    |    \--- org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.1.Final
+     |    +--- org.jboss.logging:jboss-logging:3.1.1.GA
+     |    +--- org.jboss.web:jasper-jdt:7.0.3.Final
+     |    +--- org.jboss.web:jbossweb:7.0.16.Final
+     |    \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+     +--- org.jboss.web:jbossweb:7.0.16.Final
+     +--- org.jboss.common:jboss-common-beans:1.0.0.Final
+     +--- antlr:antlr:2.7.7
+     +--- asm:asm:3.3.1
+     +--- commons-collections:commons-collections:3.2.1
+     +--- dom4j:dom4j:1.6.1
+     +--- org.javassist:javassist:3.15.0-GA
+     +--- org.hibernate:hibernate-validator:4.2.0.Final -> 4.0.0.GA (*)
+     +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+     +--- org.jboss:jboss-common-core:2.2.17.GA
+     +--- org.jboss.metadata:jboss-metadata-common:7.0.3.Final (*)
+     +--- org.jboss.msc:jboss-msc:1.0.2.GA
+     +--- org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final
+     +--- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final
+     +--- org.slf4j:slf4j-api:1.6.1
+     \--- org.jboss.as:jboss-as-build-config:7.1.2.Final
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.

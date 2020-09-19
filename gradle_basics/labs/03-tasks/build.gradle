@@ -1,0 +1,32 @@
+/*
+    1. Add a `hello` task that prints 'hello world'. Assign the value 'Gradle Training' to the `group` property.
+    2. Execute this task.
+    3. Execute `gradle tasks`. Locate the task in the report.
+    4. Add a `date` task that prints out the current date.
+    5. Execute this task.
+    6. Execute `gradle tasks --all`. Locate the task in the report.
+    7. Add meaningful descriptions to the tasks.
+		   Hint: https://www.gradle.org/docs/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:description
+    8. Run `gradle tasks --all` again.
+
+    9. (Optional) Use SimpleDateFormat to format the date.
+*/
+// register method takes two arguments : String, Closure
+// Closure
+tasks.register('hello'){
+    group = 'Gradle Training'
+    description = 'Say hello' // Configuration Time
+
+    doLast{ // Execution Time
+        println "Hello $user!"
+    }
+}
+
+tasks.register('date'){
+    group = 'Gradle Training'
+
+    doFirst{
+        println LocalDate.now().format('MMMM dd, YYYY') // Latest Groovy version does not need an import statement
+        // println new SimpleDateFormat('dd/MM/YYYY').format(new Date())
+    }
+}

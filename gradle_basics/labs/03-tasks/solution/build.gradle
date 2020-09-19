@@ -1,0 +1,15 @@
+import java.text.SimpleDateFormat
+
+tasks.register("hello") {
+    description = "says hello"
+    doLast {
+        println "hello world"
+    }
+}
+
+tasks.register("date") {
+    description = "prints date"
+    doLast {
+        println new SimpleDateFormat("yyyy-MM-dd").format(new Date())
+    }
+}

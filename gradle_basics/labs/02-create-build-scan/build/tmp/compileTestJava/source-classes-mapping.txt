@@ -1,0 +1,20 @@
+org/gradle/tests0/Test0_9.java
+ org.gradle.tests0.Test0_9
+org/gradle/tests0/Test0_4.java
+ org.gradle.tests0.Test0_4
+org/gradle/tests0/Test0_6.java
+ org.gradle.tests0.Test0_6
+org/gradle/tests0/Test0_0.java
+ org.gradle.tests0.Test0_0
+org/gradle/tests0/Test0_1.java
+ org.gradle.tests0.Test0_1
+org/gradle/tests0/Test0_5.java
+ org.gradle.tests0.Test0_5
+org/gradle/tests0/Test0_8.java
+ org.gradle.tests0.Test0_8
+org/gradle/tests0/Test0_2.java
+ org.gradle.tests0.Test0_2
+org/gradle/tests0/Test0_3.java
+ org.gradle.tests0.Test0_3
+org/gradle/tests0/Test0_7.java
+ org.gradle.tests0.Test0_7

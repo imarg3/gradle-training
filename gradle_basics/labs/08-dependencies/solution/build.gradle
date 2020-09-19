@@ -1,0 +1,19 @@
+plugins {
+    id "java-library"
+    id "project-report"    
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://repository.jboss.org/nexus/content/groups/public-jboss/" }
+}
+
+dependencies {
+    implementation "org.jboss.as:jboss-as-jpa:7.1.2.Final"
+}
+
+configurations {
+    all {
+        resolutionStrategy.force "org.hibernate:hibernate-validator:4.0.0.GA"
+    }
+}
