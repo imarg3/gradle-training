@@ -1,0 +1,33 @@
+1. Were the results of any cacheable tasks stored within the cache?
+
+  To search for tasks resolved from the cache, click the magnifying glass on the timeline view. Set "Task output cacheability" to "Cacheable" and you should see the list of cacheable tasks.
+
+  For this example, the cacheable tasks are compileJava, compileTestJava and test.
+
+  If you look at the expanded view of any of these tasks, you will see that the build cache result is indeed stored in the local cache.
+
+2. Were there any timesavings due to the cache in these builds?
+
+  Because there were no cache hits, there were no time savings (called avoidance savings on the scan). If you look at the next scan with cache hits, you'll see the avoidance savings right below duration.
+
+3. Which tasks were resolved from the cache?
+
+  To find which tasks were resolved from the cache, filter the 'Outcome' on 'FROM-CACHE' on the Timeline tab.
+
+4. Were there any cacheable tasks that were not resolved from the cache?
+
+  Not in this example.
+
+5. How much faster is the fully cached build than the uncached build?
+
+  This number will vary based on your environment. You will find the answer for your build on the performance tab under 'Task execution'.
+
+  For the example scan, the avoidance savings was 1.037s.
+
+6. Which task types are not cacheable?
+
+  You will find the non-cacheable tasks by setting the 'Task output cacheability' filter to 'Not cacheable: Any reason'.
+
+  e.g. https://enterprise-training.gradle.com/s/rzht6qise5ujg/timeline?cacheableFilter=any_non-cacheable
+
+  The reason listed is 'Not cacheable: Task output caching not enabled'. The reason for this varies based on the task type. You can read more about this in the documentation: https://docs.gradle.org/current/userguide/build_cache.html#sec:task_output_caching_cacheable_tasks.

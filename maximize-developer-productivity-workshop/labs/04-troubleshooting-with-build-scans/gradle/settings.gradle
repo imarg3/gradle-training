@@ -1,0 +1,16 @@
+plugins {
+  id("com.gradle.enterprise").version("3.4")
+}
+
+rootProject.name = "04-troubleshooting-with-build-scans"
+
+include "custom-logger"
+
+gradleEnterprise {
+  buildScan {
+    server = "https://enterprise-training.gradle.com"
+    publishAlways()
+    captureTaskInputFiles = true
+    tag("lab04")
+  }
+}

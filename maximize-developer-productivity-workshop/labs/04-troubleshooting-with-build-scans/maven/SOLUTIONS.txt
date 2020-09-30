@@ -1,0 +1,32 @@
+How much time is being spent on garbage collection?
+  Open the build scan link in your console and click "Performance"
+  Under the "Build" heading, the answer is next to "Total Garbage Collection Time".
+
+  e.g.: https://enterprise-training.gradle.com/s/tmdsvcaeeyaao/performance/build#total-garbage-collection-time
+
+What is the peak memory usage?
+  On the "Performance" tab, under the "Build" heading just below "Total Garbage Collection Time" peak usage of the
+  JVM's different memory spaces are shown.
+
+  e.g.: https://enterprise-training.gradle.com/s/tmdsvcaeeyaao/performance/build#peak-heap-memory-usage
+
+Fix the issue degrading build performance:
+
+  The issue degrading build performance is an extremely low memory limit set within the .mvn/jvm.config file
+  Setting a higher limit, or removing the line entirely will allow maven to use a sufficient amount of memory
+
+Are the custom-logger project and example-project modules compiling with the same version slf4j-api?
+
+  Look at the dependencies tab and expand example-project's dependencies
+  e.g.: https://enterprise-training.gradle.com/s/tmdsvcaeeyaao/dependencies?toggled=WyIwLjEiLCIwLjEtMS4xIiwiMC4xLTEuMS0yLjEiLCIwLjAiLCIwLjAtMS4wIl0#0.1-1.1-2.1-3.1
+  custom-logger compiles against slf4j-api 1.7.28. example-project compiles against slf4j-api 1.7.25.
+  Since example-project consumes custom-logger as a dependency, it is potentially problematic that custom-logger compiles and tests against a different version of this dependency.
+
+Why is does the console log contain messages about multiple slf4j bindings?
+
+  The example-project depends upon slf4j-simple and the custom-logger project depends upon logback-classic.
+  These both implement the slf4j api and both end up on the test runtime classpath. slf4j notices this and complains
+
+Fix the dependency issues discovered in step 5 so that only a single version of slf4j is used
+
+  For a small project like this one, a simple solution is to change custom-logger to instead depend on slf4j-simple.

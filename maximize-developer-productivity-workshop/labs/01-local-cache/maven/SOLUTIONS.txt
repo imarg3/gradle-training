@@ -1,0 +1,33 @@
+1. Were the results of any cacheable goals stored within the cache?
+
+  To search for goals resolved from the cache, click the magnifying glass on the timeline view. Set "Goal output cacheability" to "Cacheable" and you should see the list of cacheable goals.
+
+  For this example, the cacheable goals are compile, testCompile and (surefire) test.
+
+  If you look at the expanded view of any of these goals, you will see that the build cache result is indeed stored in the local cache.
+
+2. Were there any timesavings due to the cache in these builds?
+
+  Because there were no cache hits, there were no time savings (called avoidance savings on the scan). If you look at the next scan with cache hits, you'll see the avoidance savings right below duration.
+
+3. Which goals were resolved from the cache?
+
+  To find which goals were resolved from the cache, filter the 'Outcome' on 'FROM-CACHE' on the timeline tab.
+
+4. Were there any cacheable goals that were not resolved from the cache?
+
+  Not in this example.
+
+5. How much faster is the fully cached build than the uncached build?
+
+  This number will vary based on your environment. You will find the answer for your build on the performance tab under 'Goal execution'.
+
+  For the example scan, the avoidance savings was 0.888s (53.02%).
+
+6. How much build time could be saved if checkstyle were cacheable?
+
+  For this example, the answer is 20.238s found at the top of the page when filtering on 'checkstyle'.
+
+  e.g. https://enterprise-training.gradle.com/s/76cvqqo7xvtio/timeline?goal-execution=checkstyle
+
+  If you wanted to be more precise, you could also estimate the cache overhead based on the other goals: https://enterprise-training.gradle.com/s/76cvqqo7xvtio/performance/build-cache#local-cache-hit
