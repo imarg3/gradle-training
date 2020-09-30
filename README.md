@@ -6,4 +6,6 @@ Our goal is to demonstrate the building blocks necessary for you to author your 
 
 The Gradle build cache significantly reduces build time by reusing outputs produced by other builds in your organization. In this training, you will learn the basics and best practices to make the most of caching in your build. Discussion about the different possible architectures, how they affect build performance, and how Gradle Enterprise can help you manage, analyze, and troubleshoot the build cache.
 
+If you are not already familiar with DPE (Developer Productivity Engineering), it is a new software development discipline that uses data analytics and acceleration technologies to speed up the critical software development processes—from builds to testing to CI—and make them more efficient.
+
 More information on [Gradle Training](https://gradle.com/training/).
